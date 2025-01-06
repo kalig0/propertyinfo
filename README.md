@@ -1,19 +1,44 @@
 # Daniel Yu eGain Take Home
 
 ## Environment Variables
-setup environment variables in egain-takehome-backend.env
-for rentcastapi go to https://www.app.rentcast.io/app -> sign up -> click api dashboard on the top -> create API key
-for nearbyschoolsapi go to https://www.solutions.greatschools.org/k12-data-solutions/nearbyschools-api -> click choose school quality -> fill in the form for the 14 day free trial (website can be any website e.g. www.google.com) -> your api key will be sent to your email
+### Setup environment variables in `egain-takehome-backend.env`
 
-## Run 
-cd egain-takehome-frontend
-npm i
-npm start
+- For **rentcastapi**, go to [Rentcast](https://www.app.rentcast.io/app):
+  1. Sign up.
+  2. Click **API Dashboard** at the top.
+  3. Create an API key.
 
-In a seperate terminal:
-cd egain-takehome-backend
-npm i
-node server.js
+- For **nearbyschoolsapi**, go to [Nearby Schools API](https://www.solutions.greatschools.org/k12-data-solutions/nearbyschools-api):
+  1. Click **Choose School Quality**.
+  2. Fill in the form for a 14-day free trial (you can use any website, e.g., `www.google.com`).
+  3. Your API key will be sent to your email.
 
-In the form enter a street address, city, and choose a state. As an example you can use 3015 Fleetwood Dr, San Bruno, CA.
-One thing to note for the property information api is that not all addresses are in it's database. I recommend searching for houses as most apartments are not included in the database.
+---
+
+## Run
+
+1. Navigate to the frontend directory:
+   - cd egain-takehome-frontend
+   - npm i
+   - npm start
+
+2. In a seperate terminal:
+    - cd egain-takehome-backend
+    - npm i
+    - node server.js
+
+--
+
+## Usage
+1. In the form enter:
+    - a street address
+    - a city
+    - choose a state
+2. Example input:
+    - 3015 Fleetwood Dr, San Bruno, CA
+
+--
+
+## Notes
+- For the property information API, not all addresses are included in its database.
+- It's recommended to search for houses, as most apartments are not included in the database.
